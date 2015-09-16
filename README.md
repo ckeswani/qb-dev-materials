@@ -7,5 +7,6 @@
 From the root dir, 
 `
 gradle jar
+
 java -jar build/libs/dev-interview-materials.jar
 `
