@@ -176,7 +176,7 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Swaziland",1055506));
 		output.add(new ImmutablePair<String, Integer>("Djibouti",879053));
 		output.add(new ImmutablePair<String, Integer>("Fiji",850700));
-		output.add(new ImmutablePair<String, Integer>("R»union (France)",828054));
+		output.add(new ImmutablePair<String, Integer>("Reunion (France)",828054));
 		output.add(new ImmutablePair<String, Integer>("Guyana",761442));
 		output.add(new ImmutablePair<String, Integer>("Bhutan",695822));
 		output.add(new ImmutablePair<String, Integer>("Comoros",675000));
@@ -204,7 +204,7 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Samoa",183123));
 		output.add(new ImmutablePair<String, Integer>("Guam (US)",180865));
 		output.add(new ImmutablePair<String, Integer>("Saint Lucia",174000));
-		output.add(new ImmutablePair<String, Integer>("SÑo Tom» and PrÃncipe",165397));
+		output.add(new ImmutablePair<String, Integer>("Suo Tom and Principe",165397));
 		output.add(new ImmutablePair<String, Integer>("Curacao (Netherlands)",142180));
 		output.add(new ImmutablePair<String, Integer>("Grenada",109553));
 		output.add(new ImmutablePair<String, Integer>("Saint Vincent and the Grenadines",109284));
