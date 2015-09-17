@@ -14,7 +14,7 @@ public class DBManagerImpl implements DBManager {
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db");
+            c = DriverManager.getConnection("jdbc:sqlite:src/main/resources/citystatecountry.db");
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();

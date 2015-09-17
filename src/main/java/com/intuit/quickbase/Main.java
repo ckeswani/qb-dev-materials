@@ -1,21 +1,24 @@
 package com.intuit.quickbase;
 
-import com.intuit.quickbase.devint.ConcreteStatService;
-import com.intuit.quickbase.devint.IStatService;
-import java.util.List;
-import org.apache.commons.lang3.tuple.Pair;
+import com.intuit.quickbase.devint.DBManagerImpl;
+
+import java.sql.Connection;
+
 
 public class Main {
     public static void main( String args[] )
     {
+
        System.out.println("Starting.");
-       
-       IStatService service = new ConcreteStatService();
-       List<Pair<String, Integer>> countries = service.GetCountryPopulations();
-       for (Pair<String, Integer> pair : countries)
-       {
-    	  System.out.printf("%s: %d", pair.getLeft(), pair.getRight());
-    	  System.out.println();
-       }
+      
+
+        System.out.print("Getting DB Connection...");
+        DBManagerImpl dbm = new DBManagerImpl();
+        Connection c = dbm.getConnection();
+        if (c == null) {
+            System.out.println("failed.");
+            System.exit(1);
+        }
+
     }
 }
