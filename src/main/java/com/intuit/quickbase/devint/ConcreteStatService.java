@@ -84,9 +84,6 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Russia",142849472));
 		output.add(new ImmutablePair<String, Integer>("Benin",9211741));
 		output.add(new ImmutablePair<String, Integer>("Fiji",850700));
-		output.add(new ImmutablePair<String, Integer>("Brazil",193252604));
-		output.add(new ImmutablePair<String, Integer>("Tonga",103365));
-		output.add(new ImmutablePair<String, Integer>("Turkey",73722988));
 		output.add(new ImmutablePair<String, Integer>("Australia",22299800));
 		output.add(new ImmutablePair<String, Integer>("Tanzania",43187823));
 		output.add(new ImmutablePair<String, Integer>("Turkmenistan",5479800));
@@ -134,7 +131,6 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Ghana",24223431));
 		output.add(new ImmutablePair<String, Integer>("Albania",3195000));
 		output.add(new ImmutablePair<String, Integer>("Czech Republic",10506813));
-		output.add(new ImmutablePair<String, Integer>("Solomon Islands",530669));
 		output.add(new ImmutablePair<String, Integer>("Montenegro",616411));
 		output.add(new ImmutablePair<String, Integer>("Venezuela",28833845));
 		output.add(new ImmutablePair<String, Integer>("El Salvador",6194126));
@@ -198,7 +194,6 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Burkina Faso",15730977));
 		output.add(new ImmutablePair<String, Integer>("Belgium",10839905));
 		output.add(new ImmutablePair<String, Integer>("Saint Lucia",174000));
-		output.add(new ImmutablePair<String, Integer>("Oman",2773479));
 		output.add(new ImmutablePair<String, Integer>("Jamaica",2701200));
 		output.add(new ImmutablePair<String, Integer>("Cameroon",19958352));
 		output.add(new ImmutablePair<String, Integer>("Hong Kong (PR China)",7024200));
@@ -210,7 +205,6 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<String, Integer>("Japan",128056000));
 		output.add(new ImmutablePair<String, Integer>("The Gambia",1750732));
 		output.add(new ImmutablePair<String, Integer>("Estonia",1340127));
-
 		return output;
 	}
 
