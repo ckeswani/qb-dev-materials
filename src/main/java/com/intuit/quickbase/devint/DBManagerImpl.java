@@ -19,18 +19,6 @@ public class DBManagerImpl implements DBManager {
             c = DriverManager.getConnection("jdbc:sqlite:src/main/resources/citystatecountry.db");
             System.out.println("Opened database successfully");
 
-//            //TODO: Code below demonstrates executing SQL against the DB. You'll need to query it for population data to complete the assignment.
-//            stmt = c.createStatement();
-//            String sql = "CREATE TABLE COMPANY " +
-//                    "(ID INT PRIMARY KEY     NOT NULL," +
-//                    " NAME           TEXT    NOT NULL, " +
-//                    " AGE            INT     NOT NULL, " +
-//                    " ADDRESS        CHAR(50), " +
-//                    " SALARY         REAL)";
-//            stmt.executeUpdate(sql);
-//            stmt.close();
-//            c.close();
-
         } catch (ClassNotFoundException cnf) {
             System.out.println("could not load driver");
         } catch (SQLException sqle) {
@@ -38,4 +26,7 @@ public class DBManagerImpl implements DBManager {
         }
         return c;
     }
+
+    //TODO: Add a method (signature of your choosing) to query the db for population data by country
+
 }

@@ -5,8 +5,9 @@ import com.intuit.quickbase.devint.DBManagerImpl;
 import java.sql.Connection;
 
 /**
- * The main method of the executable JAR generated from this repository. This method should execute and print to the
- * console the solution to the problem described in the root README.md.
+ * The main method of the executable JAR generated from this repository. This is to let you
+ * execute something from the command-line or IDE for the purposes of demonstration, but you can choose
+ * to demonstrate in a different way (e.g. if you're using a framework)
  */
 public class Main {
     public static void main( String args[] ) {
