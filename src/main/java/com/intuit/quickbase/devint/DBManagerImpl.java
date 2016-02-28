@@ -1,9 +1,6 @@
 package com.intuit.quickbase.devint;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.DriverManager;
+import java.sql.*;
 
 /**
  * This DBManager implementation provides a connection to the database containing population data.
@@ -16,7 +13,7 @@ public class DBManagerImpl implements DBManager {
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:src/main/resources/citystatecountry.db");
+            c = DriverManager.getConnection("jdbc:sqlite:resources/data/citystatecountry.db");
             System.out.println("Opened database successfully");
 
         } catch (ClassNotFoundException cnf) {
@@ -26,7 +23,6 @@ public class DBManagerImpl implements DBManager {
         }
         return c;
     }
-
     //TODO: Add a method (signature of your choosing) to query the db for population data by country
 
 }
