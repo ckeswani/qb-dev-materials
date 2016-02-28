@@ -1,5 +1,6 @@
 package com.intuit.quickbase;
 
+import com.intuit.quickbase.devint.DBManager;
 import com.intuit.quickbase.devint.DBManagerImpl;
 
 import java.sql.Connection;
@@ -14,7 +15,7 @@ public class Main {
         System.out.println("Starting.");
         System.out.print("Getting DB Connection...");
 
-        DBManagerImpl dbm = new DBManagerImpl();
+        DBManager dbm = new DBManagerImpl();
         Connection c = dbm.getConnection();
         if (null == c ) {
             System.out.println("failed.");
